@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="#">
+        <title>Linux Distributions - Add Distro</title>
+    </head>
+    <body>
+        <h1>Enter a Linux distribution from DistroWatch:</h1>
+        <form action="AddDistroServlet" method="post">
+            <fieldset>
+                <legend>Enter the Linux distro's name:</legend>
+                <input type="text" name="name">
+            </fieldset>
+            <fieldset>
+                <legend>Enter the Linux distro this Linux distro is based on:</legend>
+                <input type="text" name="basedOn">
+            </fieldset>
+            <fieldset>
+                <legend>Enter the Linux distro's origin:</legend>
+                <input type="text" name="origin">
+            </fieldset>
+            <fieldset>
+                <legend>Add the Linux distro:</legend>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <a href="ShowAllDistrosServlet">Show the Linux distros</a>
+    </body>
+</html>

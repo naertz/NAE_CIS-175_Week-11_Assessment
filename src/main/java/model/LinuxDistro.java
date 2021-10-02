@@ -46,7 +46,7 @@ public class LinuxDistro {
     
     // Setter(s) =======================
     // ID
-    public void setID(int id) {
+    public void setId(int id) {
         this.id = id;
     }
     
@@ -68,7 +68,7 @@ public class LinuxDistro {
     
     // Getter(s) ===============
     // ID
-    public int getID() {
+    public int getId() {
         return id;
     }
     

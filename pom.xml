@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>linuxdistros</groupId>
-  <artifactId>linuxdistros</artifactId>
+  <groupId>weblinuxdistros</groupId>
+  <artifactId>weblinuxdistros</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>LinuxDistros</name>
-  <description>JPA and MySQL console application project which updates a database of linux distributions</description>
+  <name>WebLinuxDistros</name>
+  <description>JPA and MySQL application project which updates a database of linux distributions using JSP pages and Servlets</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -30,8 +30,28 @@
   	</dependency>
   	<dependency>
   		<groupId>org.eclipse.persistence</groupId>
-  		<artifactId>javax.persistence</artifactId>
-  		<version>2.1.1</version>
+        <artifactId>javax.persistence</artifactId>
+        <version>2.1.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>4.0.1</version>
+  	</dependency>
+  	<dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>2.3.3</version>
+    </dependency>
+  	<dependency>
+  		<groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>jstl</artifactId>
+  		<version>1.2</version>
   	</dependency>
   </dependencies>
 </project>

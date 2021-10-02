@@ -1,7 +1,7 @@
-# Week 3 Assessment
+# Week 5 Assessment
 
 |Class|Week|
 |-----|----|
-|CIS-175 Java II|3|
+|CIS-175 Java II|5|
 
-An example of MySQL and JPA using an entity class, a helper class, and a class to start the program
+JPA and MySQL console application project which updates a database of linux distributions using JSP pages and Servlets

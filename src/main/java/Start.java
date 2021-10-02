@@ -63,7 +63,7 @@ public class Start {
         if (!foundDistros.isEmpty()) {
             System.out.println("Found Distros:");
             for (LinuxDistro distro : foundDistros) {
-                System.out.println(distro.getID() + " : " + distro.toString());
+                System.out.println(distro.getId() + " : " + distro.toString());
             }
             System.out.println();
             System.out.print("Enter the Linux distro's ID to edit: ");
