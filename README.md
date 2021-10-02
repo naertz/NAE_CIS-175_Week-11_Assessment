@@ -4,4 +4,4 @@
 |-----|----|
 |CIS-175 Java II|5|
 
-JPA and MySQL console application project which updates a database of linux distributions using JSP pages and Servlets
+JPA and MySQL application project which updates a database of Linux distributions using JSP pages and Servlets
