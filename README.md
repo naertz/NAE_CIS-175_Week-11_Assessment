@@ -1,7 +1,7 @@
-# Week 5 Assessment
+# Week 6 Assessment
 
 |Class|Week|
 |-----|----|
-|CIS-175 Java II|5|
+|CIS-175 Java II|6|
 
-JPA and MySQL application project which updates a database of Linux distributions using JSP pages and Servlets
+JPA, Servlets, and JSPs application which collects notes from a distro hopping enthusiast to keep record of operating system experiences

@@ -16,7 +16,7 @@ import javax.persistence.TypedQuery;
 import model.LinuxDistro;
 
 public class LinuxDistroHelper {
-    private static EntityManagerFactory linuxDistributionsEMF = Persistence.createEntityManagerFactory("LinuxDistributions");
+    private static EntityManagerFactory linuxDistributionsEMF = Persistence.createEntityManagerFactory("LinuxDistroHopNotes");
     
     public LinuxDistro findLinuxDistroID(int id) {
         EntityManager linuxDistributionsEM = linuxDistributionsEMF.createEntityManager();

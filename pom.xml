@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>weblinuxdistros</groupId>
-  <artifactId>weblinuxdistros</artifactId>
+  <groupId>weblinuxdistrohopnotes</groupId>
+  <artifactId>weblinuxdistrohopnotes</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>WebLinuxDistros</name>
-  <description>JPA and MySQL application project which updates a database of linux distributions using JSP pages and Servlets</description>
+  <name>WebLinuxDistroHopNotes</name>
+  <description>JPA, Servlets, and JSPs application which collects notes from a distro hopping enthusiast to keep record of operating system experiences</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>

@@ -38,9 +38,9 @@ public class LinuxDistro {
     // Name, Based On, Origin
     public LinuxDistro(String name, String basedOn, String origin) {
         super();
-        this.name = name;
+        this.name    = name;
         this.basedOn = basedOn;
-        this.origin = origin;
+        this.origin  = origin;
     }
     // =============================================================
     
