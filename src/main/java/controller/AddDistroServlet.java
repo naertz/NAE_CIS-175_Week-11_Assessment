@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,17 +16,18 @@ import model.LinuxDistro;
 @WebServlet("/AddDistroServlet")
 public class AddDistroServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AddDistroServlet() {
-        super();
-    }
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public AddDistroServlet() {
+		super();
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
@@ -33,15 +35,16 @@ public class AddDistroServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String name    = request.getParameter("name");
+		String name	= request.getParameter("name");
 		String basedOn = request.getParameter("basedOn");
 		String origin  = request.getParameter("origin");
-		
+
 		LinuxDistro distro = new LinuxDistro(name, basedOn, origin);
 		LinuxDistroHelper ldh = new LinuxDistroHelper();
 		ldh.insertLinuxDistro(distro);
-		
+
 		getServletContext().getRequestDispatcher("/index.html").forward(request, response);
 	}
 

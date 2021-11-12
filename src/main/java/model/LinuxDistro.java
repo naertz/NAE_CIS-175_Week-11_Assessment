@@ -16,82 +16,77 @@ import javax.persistence.Table;
 @Entity
 @Table(name="LinuxDistributions")
 public class LinuxDistro {
-    // Instance Variable(s) ===========================
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ID")
-    private int id;         // ID
-    @Column(name="Name")
-    private String name;    // Name
-    @Column(name="BasedOn")
-    private String basedOn; // Based On
-    @Column(name="Origin")
-    private String origin;  // Origin
-    // ================================================
-    
-    // Constructor(s) ==============================================
-    // Default
-    public LinuxDistro() {
-        super();
-    }
-    
-    // Name, Based On, Origin
-    public LinuxDistro(String name, String basedOn, String origin) {
-        super();
-        this.name    = name;
-        this.basedOn = basedOn;
-        this.origin  = origin;
-    }
-    // =============================================================
-    
-    // Setter(s) =======================
-    // ID
-    public void setId(int id) {
-        this.id = id;
-    }
-    
-    // Name
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    // Based On
-    public void setBasedOn(String basedOn) {
-        this.basedOn = basedOn;
-    }
-    
-    // Origin
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-    // =================================
-    
-    // Getter(s) ===============
-    // ID
-    public int getId() {
-        return id;
-    }
-    
-    // Name
-    public String getName() {
-        return name;
-    }
-    
-    // Based On
-    public String getBasedOn() {
-        return basedOn;
-    }
-    
-    // Origin
-    public String getOrigin() {
-        return origin;
-    }
-    // =========================
-    
-    // Method(s) ===========================================================================
-    // Linux Distro Information
-    public String getInformation() {
-        return this.name + " [Based On: " + this.basedOn + ", Origin: " + this.origin + "]";
-    }
-    // =====================================================================================
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ID")
+	private int id;
+	@Column(name="Name")
+	private String name;
+	@Column(name="BasedOn")
+	private String basedOn;
+	@Column(name="Origin")
+	private String origin;
+
+	/****************/
+	/* Constructors */
+	/****************/
+
+	public LinuxDistro() {
+		super();
+	}
+
+	public LinuxDistro(String name, String basedOn, String origin) {
+		super();
+		this.name	= name;
+		this.basedOn = basedOn;
+		this.origin  = origin;
+	}
+
+	/***********/
+	/* Setters */
+	/***********/
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setBasedOn(String basedOn) {
+		this.basedOn = basedOn;
+	}
+
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+
+	/***********/
+	/* Getters */
+	/***********/
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getBasedOn() {
+		return basedOn;
+	}
+
+	public String getOrigin() {
+		return origin;
+	}
+
+	/***********/
+	/* Methods */
+	/***********/
+
+	public String getInformation() {
+		return this.name + " [Based On: " + this.basedOn + ", Origin: " + this.origin + "]";
+	}
 }
